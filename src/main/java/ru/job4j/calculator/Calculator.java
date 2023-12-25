@@ -1,6 +1,11 @@
 package ru.job4j.calculator;
 
 public class Calculator {
+    public static void plus(int a, int b) {
+        int result = a + b;
+        System.out.println(result);
+    }
+
     public static void main(String[] args) {
         int one = 1;
         int two = 2;
@@ -23,5 +28,13 @@ public class Calculator {
         size = 100;
         size = size - 5;
         System.out.println("size = " + size);
+
+        /**
+         * 4. Методы [#231984]
+         */
+        Calculator.plus(100, 500);
+        Calculator.plus(4, 2);
+        Calculator.plus(3, 5);
+
     }
 }
