@@ -19,7 +19,6 @@ public class Calculator {
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
 
-        //3.1. Переназначение переменной [#232354]
         int size = 10;
         size = 100;
         size = size - 5;
