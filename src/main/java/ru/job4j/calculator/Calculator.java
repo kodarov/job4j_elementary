@@ -36,5 +36,7 @@ public class Calculator {
         Calculator.plus(4, 2);
         Calculator.plus(3, 5);
 
+        int result3 = MathFunction.func1(100);
+        System.out.println(result3);
     }
 }
