@@ -7,12 +7,13 @@ public class ChessBoard {
         if (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)
                 && Math.abs(x1 - x2) == Math.abs(y1 - y2)) {
-                result = Math.abs(x1 - x2);
+            result = Math.abs(x1 - x2);
         }
         return result;
     }
 
     private static boolean isValid(int coordinate) {
         return coordinate >= 0 && coordinate <= 7;
+
     }
 }
