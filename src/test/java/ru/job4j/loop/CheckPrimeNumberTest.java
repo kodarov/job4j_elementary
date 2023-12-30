@@ -1,6 +1,7 @@
 package ru.job4j.loop;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CheckPrimeNumberTest {
@@ -49,6 +50,20 @@ class CheckPrimeNumberTest {
     @Test
     void when49ThenFalse() {
         int number = 49;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isFalse();
+    }
+
+    @Test
+    void when2ThenTrue() {
+        int number = 2;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    void whenMinus2ThenFalse() {
+        int number = -2;
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
