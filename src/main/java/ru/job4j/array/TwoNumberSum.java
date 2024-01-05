@@ -14,7 +14,6 @@ public class TwoNumberSum {
                 i++;
             }
         }
-
         return new int[0];
     }
 }
